@@ -1,0 +1,52 @@
+{
+  "name": "xterm",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Tweet from your terminal (X / Twitter CLI)",
+  "main": "dist/cli.js",
+  "bin": {
+    "xterm": "dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transmental/xterm.git"
+  },
+  "homepage": "https://github.com/transmental/xterm#readme",
+  "bugs": {
+    "url": "https://github.com/transmental/xterm/issues"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "ts-node src/cli.ts",
+    "prepare": "npm run build",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "install-global": "npm run build && npm install -g .",
+    "uninstall-global": "npm uninstall -g xterm",
+    "reinstall-global": "npm run uninstall-global && npm run install-global"
+  },
+  "keywords": [
+    "twitter",
+    "x",
+    "cli",
+    "tweet"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "open": "^10.2.0",
+    "twitter-api-v2": "^1.27.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "@types/yargs": "^17.0.33",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
