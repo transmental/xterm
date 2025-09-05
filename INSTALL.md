@@ -1,13 +1,24 @@
-# One-liner installation commands for xterm
+# Installation commands for xterm
 
-## macOS/Linux
+## NPM Installation (Recommended)
 
 ```bash
-git clone https://github.com/yourusername/xterm.git && cd xterm && ./install.sh
+npm install -g foundnone-xterm
 ```
 
-## Alternative with curl
+## Installation from Source
+
+### macOS/Linux
 
 ```bash
-npm install -g xterm
+git clone https://github.com/transmental/xterm.git && cd xterm && ./install.sh
+```
+
+### Alternative method
+
+```bash
+git clone https://github.com/transmental/xterm.git
+cd xterm
+npm install
+npm run install-global
 ```

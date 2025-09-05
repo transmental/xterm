@@ -1,6 +1,6 @@
 {
-  "name": "xterm",
-  "version": "1.0.0",
+  "name": "foundnone-xterm",
+  "version": "1.0.1",
   "type": "module",
   "description": "Tweet from your terminal (X / Twitter CLI)",
   "main": "dist/cli.js",

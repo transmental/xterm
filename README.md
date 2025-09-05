@@ -13,7 +13,13 @@ Tweet from your terminal! A simple, fast CLI for posting to X (Twitter) with sup
 
 ## 🚀 Quick Installation
 
-### Automatic Installation (Recommended)
+### NPM Installation (Recommended)
+
+```bash
+npm install -g foundnone-xterm
+```
+
+### Automatic Installation from Source
 
 **macOS/Linux:**
 
@@ -37,7 +43,7 @@ cd xterm
 install.bat
 ```
 
-### Manual Installation
+### Manual Installation from Source
 
 1. Make sure you have Node.js installed
 2. Clone this repository
